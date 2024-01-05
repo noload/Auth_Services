@@ -81,6 +81,15 @@ class UserService {
       throw error;
     }
   }
+
+  async isAdmin(userId) {
+    try {
+      return this.userReository.isAdmin(userId);
+    } catch (error) {
+      console.log("something went wrong to find role of user");
+      throw error;
+    }
+  }
 }
 
 module.exports = UserService;
