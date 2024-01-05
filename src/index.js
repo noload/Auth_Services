@@ -15,7 +15,7 @@ const prepareAuthServer = () => {
   );
   app.use("/api", apiRoute);
 
-  app.listen(PORT, () => {
+  app.listen(PORT, async () => {
     console.log(`server started at ${PORT}`);
   });
 };
